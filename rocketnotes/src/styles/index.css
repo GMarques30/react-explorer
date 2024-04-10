@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-800;
+    @apply text-white;
+
+    -webkit-font-smoothing: antialised;
+  }
+
+  body,
+  input,
+  button,
+  textoarea {
+    @apply font-serif;
+    @apply text-base;
+    outline: none;
+  }
+
+  button,
+  a {
+    @apply cursor-pointer;
+    transition: filter 0.2s;
+  }
+
+  button:hover,
+  a:hover {
+    filter: brightness(0.9);
+  }
+}
